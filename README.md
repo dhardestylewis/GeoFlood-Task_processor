@@ -128,26 +128,34 @@ The log files are flat CSV tables, with the following columns:
 * `exit_code`
     * exit code of the step of the workflow
 
-Here is an example of these outputs, originally visualized by [Prof David Maidment](https://www.caee.utexas.edu/faculty/directory/maidment).
-![Example outputs](https://github.com/dhardestylewis/GeoFlood-preprocessing/blob/master/DEM-HUC12-Outputs_example.jpg)
+## Depictions
 
-## Already preprocessed DEMs
-Already preprocessed DEMs are now available for the vast majority of Texas's HUC12s if you are a [TACC user](https://portal.tacc.utexas.edu/). You can request a TACC account [here](https://portal.tacc.utexas.edu/account-request).
-### Notes about preprocessed DEMs
-* The DEMs are not provided for any HUC12s that have any gap in 1m resolution data.
+![Depiction of this task processor](https://github.com/dhardestylewis/GeoFlood-Task_processor/blob/main/images/GeoFlood-Task_processor-quality.jpg)
+
+![Depiction of GeoFlood workflow](https://github.com/dhardestylewis/GeoFlood-preprocessing/blob/main/images/DEM-HUC12-Outputs_example.jpg)
+
+## Workflow example for NOAA counties at 10m
+
+### Depiction of HANDs produced from this task processor
+
+![10m HAND results for some counties](https://github.com/dhardestylewis/GeoFlood-preprocessing/blob/main/images/HANDs_depicted.png)
+
+### Timings obtained from the logs of an example run of this workflow
+
+![pygeonet_grass_py3.py](https://github.com/dhardestylewis/GeoFlood-Task_processor/blob/main/images/NOAA-10m-Final_flowlines-pygeonet_grass_py3.py.png)
+![dinfdistdown](https://github.com/dhardestylewis/GeoFlood-Task_processor/blob/main/images/NOAA-10m-Final_flowlines-dinfdistdown.png)
+![Streamline_Segmentation.py](https://github.com/dhardestylewis/GeoFlood-Task_processor/blob/main/images/NOAA-10m-Final_flowlines-Streamline_Segmentation.py.png)
+
+### Cumulative timing plot
+
+This plot depicts cumulative timings in seconds for each step of the workflow.
+![Cumulative timings](https://github.com/dhardestylewis/GeoFlood-Task_processor/blob/main/images/NOAA-10m-Final_flowlines-Cumulative_command_timings.png)
+
+### Notes about these processed 10m DEMs
 * All of the DEMS are reprojected to [WGS 84 / UTM 14N](https://epsg.io/32614), even if the HUC12 is outside of UTM 14.
 ### Where to find them
-The DEMs are located on [Stampede2](https://www.tacc.utexas.edu/systems/stampede2) at `/scratch/projects/tnris/dhl-flood-modelling/TX-HUC12-DEM_outputs`.
+The DEMs are located on [Stampede2](https://www.tacc.utexas.edu/systems/stampede2) at `/scratch/projects/tnris/dhl-flood-modelling/GeoFlood/GeoFlood-Task_processor`.
 ### If you run into trouble
 Please [submit a ticket](https://portal.tacc.utexas.edu/tacc-consulting) if you have trouble accessing this data. You may also contact me directly at [@dhardestylewis](https://github.com/dhardestylewis) or <dhl@tacc.utexas.edu>
-### Available preprocessed HUC12s
-These HUC12 DEMs are available right now on [Stampede2](https://www.tacc.utexas.edu/systems/stampede2).
-![Available HUC12 DEMs](https://github.com/dhardestylewis/GeoFlood-preprocessing/blob/master/DEM-HUC12-Availability.png)
-### Confirmed successfully preprocessed HUC12s
-These HUC12 DEMs have been successfully preprocessed in the past, and will soon be available once again on [Stampede2](https://www.tacc.utexas.edu/systems/stampede2). If you need any of these _right now_, please contact me.
-![Confirmed HUC12 DEMs](https://github.com/dhardestylewis/GeoFlood-preprocessing/blob/master/DEM-HUC12-Confirmed.png)
-
-## Preprocessing workflow
-If you would like an understanding of the preprocessing workflow, I provide a simplified but representative example in this [Jupyter notebook](https://github.com/dhardestylewis/GeoFlood-preprocessing/blob/master/GeoFlood-Preprocessing.ipynb). This Jupyter notebook was presented at the inaugural [TACC Institute on Planet Texas 2050 Cyberecosystem Tools](https://bridgingbarriers.utexas.edu/pt2050-tacc-institute/) in August, 2020. Please contact me if you would like a recording.
 
 
