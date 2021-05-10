@@ -130,11 +130,13 @@ The log files are flat CSV tables, with the following columns:
 
 ## Depictions
 
+Overview of this task processor
 ![Depiction of this task processor](https://github.com/dhardestylewis/GeoFlood-Task_processor/blob/main/images/GeoFlood-Task_processor-quality.jpg)
 
-![Depiction of GeoFlood workflow](https://github.com/dhardestylewis/GeoFlood-Task_processor/blob/main/images/GeoFlood_Singularity-Workflow-quality.jpg)
-
 ## Workflow example for NOAA counties at 10m
+
+Example workflow used with this task processor
+![Depiction of GeoFlood workflow](https://github.com/dhardestylewis/GeoFlood-Task_processor/blob/main/images/GeoFlood_Singularity-Workflow-quality.jpg)
 
 ### Depiction of HANDs produced from this task processor
 
@@ -142,13 +144,18 @@ The log files are flat CSV tables, with the following columns:
 
 ### Timings obtained from the logs of an example run of this workflow
 
+* All units _in seconds_
+
+GeoNet
 ![pygeonet_grass_py3.py](https://github.com/dhardestylewis/GeoFlood-Task_processor/blob/main/images/NOAA-10m-Final_flowlines-pygeonet_grass_py3.py.png)
+TauDEM
 ![dinfdistdown](https://github.com/dhardestylewis/GeoFlood-Task_processor/blob/main/images/NOAA-10m-Final_flowlines-dinfdistdown.png)
+GeoFlood
 ![Streamline_Segmentation.py](https://github.com/dhardestylewis/GeoFlood-Task_processor/blob/main/images/NOAA-10m-Final_flowlines-Streamline_Segmentation.py.png)
 
 ### Cumulative timing plot
 
-This plot depicts cumulative timings in seconds for each step of the workflow.
+This plot depicts cumulative timings _in seconds_ for each step of the workflow.
 ![Cumulative timings](https://github.com/dhardestylewis/GeoFlood-Task_processor/blob/main/images/NOAA-10m-Final_flowlines-Cumulative_command_timings.png)
 
 ### Notes about these processed 10m DEMs
