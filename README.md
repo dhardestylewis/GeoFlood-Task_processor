@@ -24,8 +24,8 @@ This task processor is designed to be used in conjunction with [GeoFlood](https:
 Currently, it is necessary to use [my fork of GeoFlood](https://github.com/dhardestylewis/GeoFlood).
 Differences between this fork and the main GeoFlood repository will be merged soon.
 
-## Main Python script
-All of the main scripts may be found in `geoflood_task_processor`.
+## Main shell script
+All of the main scripts may be found in `geoflood_task_processor/`.
 Once the environment is set up (see below), the task processor may be initiated by executing the following command on a scheduler node of a SLURM cluster:
 ```
 initiate_slurm_task_processor.sh \
@@ -90,7 +90,7 @@ HUC2
 HUC3
 ```
 
-Now `initiate_slurm_task_processor.sh` may be run:
+Now run `initiate_slurm_task_processor.sh`:
 ```
 initiate_slurm_task_processor.sh \
     --path_taskproc slurm_task_processor.py \
