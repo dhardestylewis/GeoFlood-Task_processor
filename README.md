@@ -132,13 +132,13 @@ The log files are flat CSV tables, with the following columns:
 
 ![Depiction of this task processor](https://github.com/dhardestylewis/GeoFlood-Task_processor/blob/main/images/GeoFlood-Task_processor-quality.jpg)
 
-![Depiction of GeoFlood workflow](https://github.com/dhardestylewis/GeoFlood-preprocessing/blob/main/images/DEM-HUC12-Outputs_example.jpg)
+![Depiction of GeoFlood workflow](https://github.com/dhardestylewis/GeoFlood-Task_processor/blob/main/images/GeoFlood_Singularity-Workflow-quality.jpg)
 
 ## Workflow example for NOAA counties at 10m
 
 ### Depiction of HANDs produced from this task processor
 
-![10m HAND results for some counties](https://github.com/dhardestylewis/GeoFlood-preprocessing/blob/main/images/HANDs_depicted.png)
+![10m HAND results for some counties](https://github.com/dhardestylewis/GeoFlood-Task_processor/blob/main/images/HANDs_depicted.png)
 
 ### Timings obtained from the logs of an example run of this workflow
 
