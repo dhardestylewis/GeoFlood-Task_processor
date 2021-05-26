@@ -1,0 +1,9 @@
+export LOCATION_NAME="${PROJECT}"
+export WORKING_DIRECTORY='/shared/home/dhl/GeoFlood/IO'
+export PROJECT_CFG="/shared/home/dhl/GeoFlood/IO/GeoFlood_${PROJECT}.cfg"
+export PATH_TASK_PROC='/shared/home/dhl/GeoFlood/GeoFlood-TaskProc-running/geoflood_task_processor'
+export PATH_GEOFLOOD='/shared/home/dhl/GeoFlood/GeoFlood-DHL'
+export PATH_GEOINPUTS='/shared/home/dhl/GeoFlood/IO/GeoInputs'
+export PATH_GEOOUTPUTS='/shared/home/dhl/GeoFlood/IO/GeoOutputs'
+export PATH_CONDA_FUNCS='/shared/home/dhl/GeoFlood/GeoFlood-TaskProc-running/geoflood_task_processor/conda_wrappers.sh'
+source $PATH_CONDA_FUNCS

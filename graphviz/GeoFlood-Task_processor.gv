@@ -1,0 +1,35 @@
+digraph G {
+    "schedule_slurm_job.sbatch.sh1" [label="schedule_slurm_job.sbatch.sh", xlabel="1"];
+    "schedule_slurm_job.sbatch.sh2" [label="schedule_slurm_job.sbatch.sh", xlabel="2"];
+    "schedule_slurm_job.sbatch.shn" [label="schedule_slurm_job.sbatch.sh", xlabel="n"];
+    "node_task_processor.sh1" [label="node_task_processor.sh"];
+    "workflow_configuration-geoflood_singularity.sh1" [label="workflow_configuration-geoflood_singularity.sh" xlabel="1"];
+    "workflow-geoflood_singularity.sh1" [label="workflow-geoflood_singularity.sh"];
+    "node_task_processor.sh2" [label="node_task_processor.sh"];
+    "workflow_configuration-geoflood_singularity.sh2" [label="workflow_configuration-geoflood_singularity.sh"];
+    "workflow-geoflood_singularity.sh2" [label="workflow-geoflood_singularity.sh"];
+    "node_task_processor.shn" [label="node_task_processor.sh"];
+    "workflow_configuration-geoflood_singularity.shn" [label="workflow_configuration-geoflood_singularity.sh"];
+    "workflow-geoflood_singularity.shn" [label="workflow-geoflood_singularity.sh"];
+    "initiate_slurm_task_processor.sh" -> "slurm_task_processor.py";
+    "schedule_slurm_job.sbatch.sh1" -> "schedule_slurm_job.sbatch.sh2" [style=invis]
+    "schedule_slurm_job.sbatch.sh2" -> "schedule_slurm_job.sbatch.shn" [style=dotted, dir=none]
+    "slurm_task_processor.py" -> "schedule_slurm_job.sbatch.sh1";
+    "slurm_task_processor.py" -> "schedule_slurm_job.sbatch.sh2";
+    "slurm_task_processor.py" -> "schedule_slurm_job.sbatch.shn";
+    subgraph cluster_one {
+        "schedule_slurm_job.sbatch.sh1" -> "node_task_processor.sh1";
+        "node_task_processor.sh1" -> "workflow_configuration-geoflood_singularity.sh1";
+        "node_task_processor.sh1" -> "workflow-geoflood_singularity.sh1";
+    }
+    subgraph cluster_two {
+        "schedule_slurm_job.sbatch.sh2" -> "node_task_processor.sh2";
+        "node_task_processor.sh2" -> "workflow_configuration-geoflood_singularity.sh2";
+        "node_task_processor.sh2" -> "workflow-geoflood_singularity.sh2";
+    }
+    subgraph cluster_n {
+        "schedule_slurm_job.sbatch.shn" -> "node_task_processor.shn";
+        "node_task_processor.shn" -> "workflow_configuration-geoflood_singularity.shn";
+        "node_task_processor.shn" -> "workflow-geoflood_singularity.shn";
+    }
+}

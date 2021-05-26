@@ -1,22 +1,21 @@
 name: geoflood
 channels:
-  - conda-forge
   - defaults
+  - conda-forge
 dependencies:
-  - matplotlib
-  - geopandas
-  - psutil
-  - affine
   - python=3.7
-  - rasterio
-  - scikit-fmm
-  - gdal
   - scikit-image
-  - numpy
   - numba
+  - matplotlib
   - pandas
-  - statsmodels
-  - dask
+  - psutil
+  - rasterio
   - scipy
+  - statsmodels
+  - gdal
+  - dask
+  - numpy
+  - scikit-fmm
+  - affine
   - netcdf4
-prefix: /work/04950/dhl/stampede2/miniconda3/envs/geoflood
+  - geopandas
