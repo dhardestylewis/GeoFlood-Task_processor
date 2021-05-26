@@ -1,9 +1,0 @@
-export LOCATION_NAME="${PROJECT}"
-export WORKING_DIRECTORY='/scratch/04950/dhl/GeoFlood/GeoFlood'
-export PROJECT_CFG="${WORKING_DIRECTORY}/GeoFlood_${PROJECT}.cfg"
-export PATH_TASK_PROC='/scratch/04950/dhl/GeoFlood/GeoFlood'
-export PATH_GEOFLOOD='/scratch/04950/dhl/GeoFlood/GeoFlood/Tools'
-export PATH_GEOINPUTS='/scratch/04950/dhl/GeoFlood/GeoFlood/GeoInputs'
-export PATH_GEOOUTPUTS='/scratch/04950/dhl/GeoFlood/GeoFlood/GeoOutputs'
-export PATH_CONDA_FUNCS='/scratch/04950/dhl/HAND-TauDEM/scripts-3.2.0/conda-functions.sh'
-source $PATH_CONDA_FUNCS
