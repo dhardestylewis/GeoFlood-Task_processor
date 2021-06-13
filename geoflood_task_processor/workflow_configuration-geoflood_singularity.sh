@@ -1,5 +1,4 @@
 export LOCATION_NAME="${PROJECT}"
-<<<<<<< HEAD
 export WORKING_DIRECTORY='/scratch/04950/dhl/GeoFlood/TX-Counties-Travis-120902050406'
 export PROJECT_CFG="${WORKING_DIRECTORY}/GeoFlood_${PROJECT}.cfg"
 export PATH_TASK_PROC='/scratch/04950/dhl/GeoFlood/GeoFlood-Task_processor.git/geoflood_task_processor'
@@ -7,13 +6,4 @@ export PATH_GEOFLOOD='/scratch/04950/dhl/GeoFlood/GeoFlood-DHL.git'
 export PATH_GEOINPUTS="${WORKING_DIRECTORY}/GeoInputs"
 export PATH_GEOOUTPUTS="${WORKING_DIRECTORY}/TX-Counties-Travis-120902050406/GeoOutputs"
 export PATH_CONDA_FUNCS="${PATH_TASK_PROC}/conda_wrappers.sh"
-=======
-export WORKING_DIRECTORY='/scratch/04950/dhl/GeoFlood/GeoFlood-NOAA'
-export PROJECT_CFG="${WORKING_DIRECTORY}/GeoFlood_${PROJECT}.cfg"
-export PATH_TASK_PROC='/scratch/04950/dhl/GeoFlood/GeoFlood-NOAA/GeoFlood-Task_processor/geoflood-task_processor'
-export PATH_GEOFLOOD='/scratch/04950/dhl/GeoFlood/GeoFlood-NOAA/GeoFlood'
-export PATH_GEOINPUTS='/scratch/04950/dhl/GeoFlood/GeoFlood-NOAA/GeoInputs'
-export PATH_GEOOUTPUTS='/scratch/04950/dhl/GeoFlood/GeoFlood-NOAA/GeoOutputs'
-export PATH_CONDA_FUNCS='/scratch/04950/dhl/GeoFlood/GeoFlood-NOAA/GeoFlood-Task_processor/geoflood-task_processor/conda_wrappers.sh'
->>>>>>> 0faf0aa91b6f041517d55fdf43a290eb63e30384
 source $PATH_CONDA_FUNCS
